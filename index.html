@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Night City | Portal Oficial de Turismo</title>
 </head>
 <body>
     <!--header-->
-    <header>
-        <h1>NightCityOfficial</h1>
-        <h2>Visita Night City</h2>
-        <p><strong>La Ciudad de los Sueños.</strong> El centro del futuro, la tecnología y las oportunidades ilimitadas.</p>
-        <p><a href="#eventos">Ver próximos eventos</a></p> <!--IMPORTANTE: Si se agrega este hedader o nav a otra pagina, quitar esta linea de codigo.-->
+    <header class="hero-header">
+        <div class="top-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="ciudad.html">ciudad</a></li>
+                    <li><a href="lugares.html">lugares de interés</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="ciudad.html">ciudad</a></li>
-                <li><a href="lugares.html">lugares de interes</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-            </ul>
-        </nav>
+        <div class="hero-content">
+            <h1>Night City</h1>
+            <h2>Visita la Ciudad de los Sueños</h2>
+            <p>El centro del futuro, la tecnología y las oportunidades ilimitadas.</p>
+            <a href="#eventos" class="btn-hero">Ver próximos eventos</a>
+        </div>
     </header>
 <hr>
 
@@ -71,30 +79,49 @@
     
 <hr>
     <!--footer-->
-    <footer>
-        <div>
-          <h3>NightCityOfficial</h3>
-          <p>
-            <a href="#">inicio</a>
-            <a href="contacto.html">Contacto</a>
-          </p>
-          <small>Todos los derechos reservados 2026</small>
+    <footer class="footer-distributed">
+
+        <!-- Columna Izquierda -->
+        <div class="footer-left">
+            <h3>NightCity<span>Official</span></h3>
+
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Inicio</a>
+                <a href="ciudad.html">La Ciudad</a>
+                <a href="lugares.html">Lugares</a>
+                <a href="contacto.html">Contacto</a>
+            </p>
+
+            <p class="footer-company-name">Night City Official &copy; 2026</p>
         </div>
-  
-        <div>
-          <div>
-            <a href="tel:+5455555555"><p>Llamar</p></a>
-          </div>
-  
-          <div>
-            <p><a href="mailto:NightCityOfficial@gmail.com">NightCityOfficial@gmail.com</a></p>
-          </div>
+
+        <!-- Columna Central -->
+        <div class="footer-center">
+            <div>
+                <p><span>Distrito Centro Corporativo</span> Night City, NC 90210</p>
+            </div>
+
+            <div>
+                <p>Llamar: <a href="tel:+541155555555">+54 11 5555-5555</a></p>
+            </div>
+
+            <div>
+                <p>Correo: <a href="mailto:info@nightcityofficial.nc">info@nightcityofficial.nc</a></p>
+            </div>
         </div>
-  
-        <div>
-            <p>acerca de NightCityOfficial</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vero praesentium, nisi officia consequatur mollitia nihil tempore adipisci ducimus? Distinctio eligendi beatae soluta non a similique enim laboriosam dolorum adipisci!</p>
+
+        <!-- Columna Derecha -->
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>Acerca de Night City</span>
+                Guía oficial para visitantes y nuevos residentes. Información sobre transporte, distritos, normas de convivencia y recomendaciones de seguridad.
+            </p>
+
+            <div class="footer-icons">
+                <a href="https://www.cyberpunk.net" target="_blank" rel="noopener noreferrer">NET</a>
+            </div>
         </div>
+
     </footer>
 </body>
-</html>ml
+</html>
