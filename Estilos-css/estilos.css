@@ -1,0 +1,105 @@
+/*con esto doy la pauta de las cosas que voy a usar. Es como mi paleta de colores */
+:root{
+    --color-primario: #1a2b4a;
+    --color-acento: #028090;
+    --color-fondo: #f7f9fa;
+    --color-texto: #1a1a1a;
+    --color-texto-claro: #ffff;
+    --fuente-principal: "inter", sans-serif;
+    --fuente-secundaria: "Comic Sans MS", sans-serif;
+
+
+}
+/*reset basico*/
+*{box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1{
+    font-size: 2rem;
+    color: var(--color-texto-claro);
+}
+
+h2{
+    font-size: 1.5rem;
+    color: var(--color-texto);
+
+}
+h3{
+    font-size: 1.25rem;
+    color: var(--color-texto);
+}
+p{
+    margin-bottom: 1rem;
+    color: var(--color-texto);
+}
+/*HEADER*/
+header{
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    padding: 1rem 1.5rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Main y seccions*/
+main{
+    padding: 3rem 0;
+}
+
+img{
+    border-radius: 8px; /*redondeo las esquinas*/
+}
+
+/* Footer */
+footer{
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* efecto neon de enlaces "prueba"*/
+a {
+    color: #383291;
+    text-shadow: 
+        0 0 5px #fcfcfc,
+        0 0 10px #a1da7c,
+        0 0 20px #00f3ff,
+        0 0 40px #000303;
+    text-decoration: none;         /* Quita el subrayado predeterminado */
+    display: inline-block;          /* Permite manejar correctamente el rectángulo */
+    padding: 8px 10px;              /* Da espacio alrededor del texto */
+    border: 2px solid transparent; /* Borde invisible inicial para evitar saltos */
+    border-radius: 25px;             /* Bordes rectos iniciales */
+    background-color: transparent;  /* Fondo transparente */
+    transition: all 0.3s ease;      /* Transición suave para todos los cambios */
+}
+/* Estado cuando pasas el mouse por encima (:hover) */
+a:hover {
+    color: #ffffff;                /* Color del texto (blanco para resaltar) */
+    background-color: #9fffea;     /* Fondo del rectángulo (naranja) */
+    border: 2px solid #1ae881;     /* Borde naranja */
+    border-radius: 8px;            /* Redondea las esquinas */
+}
+.h3-neon {
+    text-shadow: 
+        0 0 5px #fcfcfc,
+        0 0 10px #a1da7c,
+        0 0 20px #00f3ff,
+        0 0 40px #000303;
+}
