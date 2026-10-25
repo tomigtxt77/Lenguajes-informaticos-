@@ -1,11 +1,11 @@
 /*colores*/
 :root {
-    --color-fondo: #0d0f12;     
-    --color-superficie: #161a22;   
-    --color-texto: #f0f4f8;         
+    --color-fondo: #0d0f12;
+    --color-superficie: #161a22;
+    --color-texto: #f0f4f8;
     --color-texto-secundario: #a0aec0;
     --color-acento-amarillo: #fcee0a;
-    --color-acento-cian: #00f0ff;     
+    --color-acento-cian: #00f0ff;
     --color-borde: #2d3748;
 
     --fuente-titulos: 'Rajdhani', sans-serif;
@@ -71,9 +71,54 @@ em {
     color: var(--color-acento-cian);
 }
 
+/* Enlaces dentro del contenido (solo en main, no afecta nav ni footer) */
+main a {
+    color: var(--color-acento-cian);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+main a:hover {
+    color: var(--color-acento-amarillo);
+}
+
+/* Efecto neón (opcional): se activa agregando class="enlace-neon" al <a> */
+.enlace-neon {
+    color: var(--color-acento-cian);
+    text-shadow:
+        0 0 5px #fcfcfc,
+        0 0 10px #a1da7c,
+        0 0 20px #00f3ff,
+        0 0 40px #000303;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 10px;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.enlace-neon:hover {
+    color: var(--color-fondo);
+    text-shadow: none;
+    background-color: #9fffea;
+    border-color: #1ae881;
+    border-radius: 8px;
+}
+
+/* Efecto neón para títulos h3 (opcional): class="h3-neon" */
+.h3-neon {
+    text-shadow:
+        0 0 5px #fcfcfc,
+        0 0 10px #a1da7c,
+        0 0 20px #00f3ff,
+        0 0 40px #000303;
+}
+
 /* header*/
 .hero-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
                 url('https://i.redd.it/cduec1dsmi461.png') no-repeat center/cover;
     min-height: 480px;
     display: flex;
@@ -186,6 +231,7 @@ img {
     display: block;
     margin: 1.5rem 0;
     border: 1px solid var(--color-borde);
+    border-radius: 8px;
 }
 
 
@@ -231,7 +277,7 @@ li {
 }
 
 .footer-distributed h3 span {
-    color: #fcee0a; 
+    color: #fcee0a;
 }
 
 /* Footer links */
@@ -295,7 +341,7 @@ li {
 }
 
 .footer-distributed .footer-center p a {
-    color: #00f0ff; 
+    color: #00f0ff;
     text-decoration: none;
 }
 
