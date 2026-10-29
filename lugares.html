@@ -1,123 +1,186 @@
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lugares | Night City</title>
-    <link rel="icon" type="image/png" href="/imagenes-lugares/Logo.png"> <!--no lo aprendimos pero lo pongo -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Lugares | Night City</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imagenes-lugares/Logo.png">
 </head>
+
 <body>
-    <!--header-->
-    <header class="hero-header">
-        <div class="top-bar">
-            <nav>
-                <ul>
-                    <li><a href="index.html">inicio</a></li>
-                    <li><a href="ciudad.html">ciudad</a></li>
-                    <li><a href="lugares.html">lugares de interés</a></li>
-                    <li><a href="contacto.html">contacto</a></li>
-                </ul>
-            </nav>
-        </div>
 
+    <!-- Header -->
+    <header class="hero-header">
 
-        <div class="hero-content">
-            <h1>Night City</h1>
-            <h2>Visita la Ciudad de los Sueños</h2>
-            <p>El centro del futuro, la tecnología y las oportunidades ilimitadas.</p>
-        </div>
-    </header>
-    <hr>
+        <div class="top-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ciudad.html">Ciudad</a></li>
+                    <li><a href="lugares.html">Lugares de interés</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
 
+        <div class="hero-content">
+            <h1>Night City</h1>
+            <h2>Visita la Ciudad de los Sueños</h2>
+            <p>El centro del futuro, la tecnología y las oportunidades ilimitadas.</p>
+        </div>
 
+    </header>
 
-    <main>
-        <ol>
-            <li>
-                <section>
-                    <h2>Afterlife:</h2>
-                    <p>Afterlife es uno de los bares más famosos y emblemáticos de Night City. Ubicado en un antiguo depósito de cadáveres, este lugar se convirtió en el punto de encuentro de mercenarios, edgerunners y personajes importantes de la ciudad.</p>
-                    <img src="/imagenes-lugares/Afterlife.png" width="400" alt="Legendario bar de mercenarios">
-                </section>
-            </li>
+    <hr>
 
+    <!-- Contenido principal -->
+    <main>
 
-            <li>
-                <section>
-                    <h2>Arasaka Tower:</h2>
-                    <p>Es uno de los edificios más imponentes y reconocibles de Night City. Esta enorme estructura representa el poder, la riqueza y la influencia de la corporación Arasaka sobre la ciudad. Su diseño moderno y tecnológico se eleva sobre los demás edificios, convirtiéndola en un símbolo del dominio corporativo.</p>
-                    <img src="/imagenes-lugares/Arasaka Tower.png" width="300" alt="Rascacielos corporativo">
-                </section>
-            </li>
+        <ol class="lista-lugares">
 
+            <!-- Afterlife -->
+            <li>
+                <section>
+                    <h2>Afterlife:</h2>
 
-            <li>
-                <section>
-                    <h2>Pacific Park:</h2>
-                    <p>Enorme parque de diversiones ubicado en Pacifica, una zona costera de Night City. Sus luces, atracciones y juegos contrastan con el ambiente oscuro y decadente de la ciudad, convirtiéndolo en uno de los lugares más llamativos para quienes buscan entretenimiento y escapar por un momento de la vida cotidiana.</p>
-                    <img src="/imagenes-lugares/Pacific Park.png" width="400" alt="Parque">
-                </section>
-            </li>
-        </ol>
-    <hr>
-    </main>
+                    <p>
+                        Afterlife es uno de los bares más famosos y emblemáticos de Night City.
+                        Ubicado en un antiguo depósito de cadáveres, este lugar se convirtió
+                        en el punto de encuentro de mercenarios, edgerunners y personajes
+                        importantes de la ciudad.
+                    </p>
 
+                    <img src="imagenes-lugares/Afterlife.png"
+                         width="400"
+                         alt="Legendario bar de mercenarios">
+                </section>
+            </li>
 
+            <!-- Arasaka Tower -->
+            <li>
+                <section>
+                    <h2>Arasaka Tower:</h2>
 
-    <!--footer-->
-    <footer class="footer-distributed">
+                    <p>
+                        Es uno de los edificios más imponentes y reconocibles de Night City.
+                        Esta enorme estructura representa el poder, la riqueza y la influencia
+                        de la corporación Arasaka sobre la ciudad. Su diseño moderno y
+                        tecnológico se eleva sobre los demás edificios, convirtiéndola
+                        en un símbolo del dominio corporativo.
+                    </p>
 
+                    <img src="imagenes-lugares/Arasaka Tower.png"
+                         width="300"
+                         alt="Rascacielos corporativo">
+                </section>
+            </li>
 
-        <!-- Columna Izquierda -->
-        <div class="footer-left">
-            <h3>NightCity<span>Official</span></h3>
+            <!-- Pacific Park -->
+            <li>
+                <section>
+                    <h2>Pacific Park:</h2>
 
+                    <p>
+                        Enorme parque de diversiones ubicado en Pacifica, una zona costera
+                        de Night City. Sus luces, atracciones y juegos contrastan con el
+                        ambiente oscuro y decadente de la ciudad, convirtiéndolo en uno
+                        de los lugares más llamativos para quienes buscan entretenimiento
+                        y escapar por un momento de la vida cotidiana.
+                    </p>
 
-            <p class="footer-links">
-                <a href="index.html" class="link-1">Inicio</a>
-                <a href="ciudad.html">La Ciudad</a>
-                <a href="lugares.html">Lugares</a>
-                <a href="contacto.html">Contacto</a>
-            </p>
+                    <img src="imagenes-lugares/Pacific Park.png"
+                         width="400"
+                         alt="Parque de diversiones de Night City">
+                </section>
+            </li>
 
+        </ol>
 
-            <p class="footer-company-name">Night City Official &copy; 2026</p>
-        </div>
+        <hr>
 
+    </main>
 
-        <!-- Columna Central -->
-        <div class="footer-center">
-            <div>
-                <p><span>Distrito Centro Corporativo</span> Night City, NC 90210</p>
-            </div>
+    <!-- Footer -->
+    <footer class="footer-distributed">
 
+        <!-- Columna izquierda -->
+        <div class="footer-left">
 
-            <div>
-                <p>Llamar: <a href="tel:+541155555555">+54 11 5555-5555</a></p>
-            </div>
+            <h3>NightCity<span>Official</span></h3>
 
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Inicio</a>
+                <a href="ciudad.html">La Ciudad</a>
+                <a href="lugares.html">Lugares</a>
+                <a href="contacto.html">Contacto</a>
+            </p>
 
-            <div>
-                <p>Correo: <a href="mailto:info@nightcityofficial.nc">info@nightcityofficial.nc</a></p>
-            </div>
-        </div>
+            <p class="footer-company-name">
+                Night City Official &copy; 2026
+            </p>
 
+        </div>
 
-        <!-- Columna Derecha -->
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>Acerca de Night City</span>
-                Guía oficial para visitantes y nuevos residentes. Información sobre transporte, distritos, normas de convivencia y recomendaciones de seguridad.
-            </p>
+        <!-- Columna central -->
+        <div class="footer-center">
 
+            <div>
+                <p>
+                    <span>Distrito Centro Corporativo</span>
+                    Night City, NC 90210
+                </p>
+            </div>
 
-            <div class="footer-icons">
-                <a href="https://www.cyberpunk.net" target="_blank" rel="noopener noreferrer">NET</a>
-            </div>
-        </div>
+            <div>
+                <p>
+                    Llamar:
+                    <a href="tel:+541155555555">+54 11 5555-5555</a>
+                </p>
+            </div>
 
+            <div>
+                <p>
+                    Correo:
+                    <a href="mailto:info@nightcityofficial.nc">
+                        info@nightcityofficial.nc
+                    </a>
+                </p>
+            </div>
 
-    </footer>
+        </div>
+
+        <!-- Columna derecha -->
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Acerca de Night City</span>
+                Guía oficial para visitantes y nuevos residentes.
+                Información sobre transporte, distritos, normas de
+                convivencia y recomendaciones de seguridad.
+            </p>
+
+            <div class="footer-icons">
+                <a href="https://www.cyberpunk.net"
+                   target="_blank"
+                   rel="noopener noreferrer">NET</a>
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
