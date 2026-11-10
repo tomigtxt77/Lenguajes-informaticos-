@@ -230,7 +230,8 @@ main {
     padding: 1rem 0;
 }
 
-main section {
+main section,
+main aside {
     background-color: var(--color-superficie);
     padding: 1.5rem;
     margin-bottom: 2rem;
@@ -646,4 +647,39 @@ body.claro .footer-distributed {
 .btn-modo:hover {
     background-color: var(--color-acento-amarillo);
     color: var(--color-fondo);
+}
+
+
+/* Título neón: alterna entre amarillo y rosa */
+.hero-content h1 {
+    color: #fcee0a;
+    text-shadow:
+        0 0 7px #fcee0a,
+        0 0 20px #fcee0a,
+        0 0 42px #fcee0a;
+    animation: neon-brillo 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-brillo {
+    from {
+        color: #fcee0a;
+        text-shadow:
+            0 0 7px #fcee0a,
+            0 0 20px #fcee0a,
+            0 0 42px #fcee0a;
+    }
+    to {
+        color: #ff2e97;
+        text-shadow:
+            0 0 7px #ff2e97,
+            0 0 20px #ff2e97,
+            0 0 42px #ff2e97;
+    }
+}
+
+/* Sin animación para quienes la tienen desactivada en su sistema */
+@media (prefers-reduced-motion: reduce) {
+    .hero-content h1 {
+        animation: none;
+    }
 }
