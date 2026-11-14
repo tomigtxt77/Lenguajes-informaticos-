@@ -7,6 +7,7 @@
     --color-texto-secundario: #a0aec0;
     --color-acento-amarillo: #fcee0a;
     --color-acento-cian: #00f0ff;
+    --color-acento-rosa: #ff2e97;
     --color-borde: #2d3748;
 
     --fuente-titulos: 'Rajdhani', sans-serif;
@@ -58,7 +59,7 @@ h2 {
 
 h3 {
     font-size: 1.3rem;
-    color: var(--color-acento-amarillo);
+    color: var(--color-acento-rosa);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -85,39 +86,7 @@ main a:hover {
     color: var(--color-acento-amarillo);
 }
 
-.enlace-neon {
-    color: var(--color-acento-cian);
-    text-shadow:
-        0 0 5px #fcfcfc,
-        0 0 10px #a1da7c,
-        0 0 20px #00f3ff,
-        0 0 40px #000303;
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 10px;
-    border: 2px solid transparent;
-    border-radius: 25px;
-    background-color: transparent;
-    transition: all 0.3s ease;
-}
-
-.enlace-neon:hover {
-    color: var(--color-fondo);
-    text-shadow: none;
-    background-color: #9fffea;
-    border-color: #1ae881;
-    border-radius: 8px;
-}
-
-.h3-neon {
-    text-shadow:
-        0 0 5px #fcfcfc,
-        0 0 10px #a1da7c,
-        0 0 20px #00f3ff,
-        0 0 40px #000303;
-}
-
-/* Header */
+/* Header (position: relative) */
 .hero-header {
     background:
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
@@ -133,44 +102,7 @@ main a:hover {
     position: relative;
 }
 
-/* Navegación anterior */
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-}
-
-.top-bar nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.2rem;
-    margin: 0;
-    padding: 0;
-}
-
-.top-bar nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: var(--fuente-titulos);
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 0.4rem 0.6rem;
-    border: 1px solid transparent;
-    transition: all 0.2s ease;
-}
-
-.top-bar nav a:hover {
-    color: var(--color-fondo);
-    background-color: var(--color-acento-amarillo);
-    border-color: var(--color-acento-amarillo);
-    border-radius: 4px;
-}
-
-/* Banner */
+/* Banner (position: absolute sobre el header) */
 .hero-content {
     text-align: center;
     max-width: 700px;
@@ -185,8 +117,13 @@ main a:hover {
 
 .hero-content h1 {
     font-size: 3rem;
-    color: var(--color-acento-amarillo);
+    color: #fcee0a;
     margin-bottom: 0.3rem;
+    text-shadow:
+        0 0 7px #fcee0a,
+        0 0 20px #fcee0a,
+        0 0 42px #fcee0a;
+    animation: neon-brillo 2.5s ease-in-out infinite alternate;
 }
 
 .hero-content h2 {
@@ -263,16 +200,10 @@ main li {
     object-fit: cover;
 }
 
-/* Lista de lugares */
-.lista-lugares {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-/* Bootstrap: navegación */
+/* Bootstrap - personalizaciones: navegación */
 .navbar-nightcity {
-    background-color: rgba(13, 15, 18, 0.85);
+    --bs-dark-rgb: 13, 15, 18;
+    --bs-bg-opacity: 0.85;
     border-bottom: 2px solid var(--color-acento-cian);
     position: relative;
     z-index: 2;
@@ -350,6 +281,13 @@ main li {
 
 .nightcity-card .card-text {
     color: var(--color-texto-secundario);
+}
+
+.nightcity-card .lugar-datos {
+    margin: 0 0 1rem;
+    padding-left: 1.2rem;
+    color: var(--color-texto-secundario);
+    font-size: 0.95rem;
 }
 
 .nightcity-card .btn {
@@ -450,7 +388,9 @@ main li {
 
 .footer-distributed h3 {
     color: #ffffff;
-    font: normal 30px 'Open Sans', sans-serif;
+    font-family: var(--fuente-titulos);
+    font-size: 30px;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -618,6 +558,7 @@ body.claro {
     --color-texto-secundario: #4a5568;
     --color-acento-amarillo: #8a6d00;
     --color-acento-cian: #00798a;
+    --color-acento-rosa: #c4126b;
     --color-borde: #cbd5e0;
 }
 
@@ -629,6 +570,7 @@ body.claro .footer-distributed {
     --color-texto: #f0f4f8;
     --color-acento-amarillo: #fcee0a;
     --color-acento-cian: #00f0ff;
+    --color-acento-rosa: #ff2e97;
 }
 
 /* Botón del modo claro/oscuro */
@@ -650,16 +592,7 @@ body.claro .footer-distributed {
 }
 
 
-/* Título neón: alterna entre amarillo y rosa */
-.hero-content h1 {
-    color: #fcee0a;
-    text-shadow:
-        0 0 7px #fcee0a,
-        0 0 20px #fcee0a,
-        0 0 42px #fcee0a;
-    animation: neon-brillo 2.5s ease-in-out infinite alternate;
-}
-
+/* Animación del título neón (se aplica en .hero-content h1) */
 @keyframes neon-brillo {
     from {
         color: #fcee0a;

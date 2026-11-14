@@ -20,3 +20,17 @@ if (botonModo) {
         aplicarModo(claro);
     });
 }
+
+// "Ver más / Ver menos" en las tarjetas de lugares.html
+// En las otras páginas no hay botones, así que no hace nada
+const botonesVerMas = document.querySelectorAll(".btn-ver-mas");
+
+botonesVerMas.forEach((boton) => {
+    boton.addEventListener("click", () => {
+        // La lista de datos es el elemento justo antes del botón
+        const datos = boton.previousElementSibling;
+        const oculto = datos.classList.toggle("d-none");
+        boton.textContent = oculto ? "Ver más" : "Ver menos";
+        boton.setAttribute("aria-expanded", !oculto);
+    });
+});

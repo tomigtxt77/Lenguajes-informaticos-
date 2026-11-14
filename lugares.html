@@ -17,7 +17,7 @@
     <title>Night City | Lugares</title>
 
     <!-- Favicon -->
-    <!-- <link rel="icon" type="image/png" href="imagenes-lugares/Logo.png"> -->
+    <link rel="icon" type="image/png" href="imagenes-lugares/Logo.png">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     <!-- Header --> 
     <header class="hero-header">
 
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-nightcity">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-nightcity">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     NightCity<span>Official</span>
@@ -73,83 +73,102 @@
     <!-- Contenido principal -->
     <main>
 
-        <ol class="lista-lugares">
+        <section>
+            <h2>Lugares de interés</h2>
+            <p>
+                Tres sitios imperdibles para conocer la esencia de Night City.
+            </p>
 
-            <!-- Afterlife -->
-            <li>
-                <section>
-                    <h2>Afterlife:</h2>
+            <!-- Grilla de Bootstrap -->
+            <div class="container-fluid px-0">
+                <div class="row g-4 align-items-start">
 
-                    <p>
-                        Afterlife es uno de los bares más famosos y emblemáticos de Night City.
-                        Ubicado en un antiguo depósito de cadáveres, este lugar se convirtió
-                        en el punto de encuentro de mercenarios, edgerunners y personajes
-                        importantes de la ciudad.
-                    </p>
+                    <!-- Afterlife -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card nightcity-card h-100">
+                            <img src="imagenes-lugares/Afterlife.png"
+                                 class="card-img-top"
+                                 alt="Legendario bar de mercenarios">
+                            <div class="card-body">
+                                <span class="badge nightcity-badge mb-2">Vida nocturna</span>
+                                <h3 class="card-title">Afterlife</h3>
+                                <p class="card-text">
+                                    Afterlife es uno de los bares más famosos y emblemáticos de Night City.
+                                    Ubicado en un antiguo depósito de cadáveres, este lugar se convirtió
+                                    en el punto de encuentro de mercenarios, edgerunners y personajes
+                                    importantes de la ciudad.
+                                </p>
+                                <ul class="lugar-datos d-none">
+                                    <li><strong>Zona:</strong> Watson (Little China).</li>
+                                    <li><strong>Qué hacer:</strong> probar los tragos con nombres de leyendas de la ciudad, escuchar música en vivo y conocer la barra donde se reúnen los mercenarios.</li>
+                                    <li><strong>Por qué visitarlo:</strong> es el sitio más emblemático de la vida nocturna y permite conocer la cultura de los edgerunners.</li>
+                                </ul>
+                                <button type="button"
+                                        class="btn btn-outline-info btn-ver-mas"
+                                        aria-expanded="false">Ver más</button>
+                            </div>
+                        </article>
+                    </div>
 
-                    <ul>
-                        <li><strong>Zona:</strong> Watson (Little China).</li>
-                        <li><strong>Qué hacer:</strong> probar los tragos con nombres de leyendas de la ciudad, escuchar música en vivo y conocer la barra donde se reúnen los mercenarios.</li>
-                        <li><strong>Por qué visitarlo:</strong> es el sitio más emblemático de la vida nocturna y permite conocer la cultura de los edgerunners.</li>
-                    </ul>
+                    <!-- Arasaka Tower -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card nightcity-card h-100">
+                            <img src="imagenes-lugares/Arasaka Tower.png"
+                                 class="card-img-top"
+                                 alt="Rascacielos corporativo">
+                            <div class="card-body">
+                                <span class="badge nightcity-badge mb-2">Corporativo</span>
+                                <h3 class="card-title">Arasaka Tower</h3>
+                                <p class="card-text">
+                                    Es uno de los edificios más imponentes y reconocibles de Night City.
+                                    Esta enorme estructura representa el poder, la riqueza y la influencia
+                                    de la corporación Arasaka sobre la ciudad. Su diseño moderno y
+                                    tecnológico se eleva sobre los demás edificios, convirtiéndola
+                                    en un símbolo del dominio corporativo.
+                                </p>
+                                <ul class="lugar-datos d-none">
+                                    <li><strong>Zona:</strong> City Center (Distrito Centro Corporativo).</li>
+                                    <li><strong>Qué hacer:</strong> recorrer la plaza corporativa, sacar fotos del skyline y admirar la arquitectura de la torre desde el exterior.</li>
+                                    <li><strong>Por qué visitarla:</strong> es el símbolo del poder corporativo y ofrece la mejor postal del centro financiero.</li>
+                                </ul>
+                                <button type="button"
+                                        class="btn btn-outline-info btn-ver-mas"
+                                        aria-expanded="false">Ver más</button>
+                            </div>
+                        </article>
+                    </div>
 
-                    <img src="imagenes-lugares/Afterlife.png"
-                         width="400"
-                         alt="Legendario bar de mercenarios">
-                </section>
-            </li>
+                    <!-- Pacific Park -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card nightcity-card h-100">
+                            <img src="imagenes-lugares/Pacific Park.png"
+                                 class="card-img-top"
+                                 alt="Parque de diversiones de Night City">
+                            <div class="card-body">
+                                <span class="badge nightcity-badge mb-2">Entretenimiento</span>
+                                <h3 class="card-title">Pacific Park</h3>
+                                <p class="card-text">
+                                    Enorme parque de diversiones ubicado en Pacifica, una zona costera
+                                    de Night City. Sus luces, atracciones y juegos contrastan con el
+                                    ambiente oscuro y decadente de la ciudad, convirtiéndolo en uno
+                                    de los lugares más llamativos para quienes buscan entretenimiento
+                                    y escapar por un momento de la vida cotidiana.
+                                </p>
+                                <ul class="lugar-datos d-none">
+                                    <li><strong>Zona:</strong> Pacifica, en la costa de Night City.</li>
+                                    <li><strong>Qué hacer:</strong> subirse a las atracciones, pasear por la costa y sacar fotos al atardecer.</li>
+                                    <li><strong>Por qué visitarlo:</strong> el contraste entre sus luces y el ambiente decadente de la zona lo vuelve una experiencia única.</li>
+                                </ul>
+                                <button type="button"
+                                        class="btn btn-outline-info btn-ver-mas"
+                                        aria-expanded="false">Ver más</button>
+                            </div>
+                        </article>
+                    </div>
 
-            <!-- Arasaka Tower -->
-            <li>
-                <section>
-                    <h2>Arasaka Tower:</h2>
-
-                    <p>
-                        Es uno de los edificios más imponentes y reconocibles de Night City.
-                        Esta enorme estructura representa el poder, la riqueza y la influencia
-                        de la corporación Arasaka sobre la ciudad. Su diseño moderno y
-                        tecnológico se eleva sobre los demás edificios, convirtiéndola
-                        en un símbolo del dominio corporativo.
-                    </p>
-
-                    <ul>
-                        <li><strong>Zona:</strong> City Center (Distrito Centro Corporativo).</li>
-                        <li><strong>Qué hacer:</strong> recorrer la plaza corporativa, sacar fotos del skyline y admirar la arquitectura de la torre desde el exterior.</li>
-                        <li><strong>Por qué visitarla:</strong> es el símbolo del poder corporativo y ofrece la mejor postal del centro financiero.</li>
-                    </ul>
-
-                    <img src="imagenes-lugares/Arasaka Tower.png"
-                         width="300"
-                         alt="Rascacielos corporativo">
-                </section>
-            </li>
-
-            <!-- Pacific Park -->
-            <li>
-                <section>
-                    <h2>Pacific Park:</h2>
-
-                    <p>
-                        Enorme parque de diversiones ubicado en Pacifica, una zona costera
-                        de Night City. Sus luces, atracciones y juegos contrastan con el
-                        ambiente oscuro y decadente de la ciudad, convirtiéndolo en uno
-                        de los lugares más llamativos para quienes buscan entretenimiento
-                        y escapar por un momento de la vida cotidiana.
-                    </p>
-
-                    <ul>
-                        <li><strong>Zona:</strong> Pacifica, en la costa de Night City.</li>
-                        <li><strong>Qué hacer:</strong> subirse a las atracciones, pasear por la costa y sacar fotos al atardecer.</li>
-                        <li><strong>Por qué visitarlo:</strong> el contraste entre sus luces y el ambiente decadente de la zona lo vuelve una experiencia única.</li>
-                    </ul>
-
-                    <img src="imagenes-lugares/Pacific Park.png"
-                         width="400"
-                         alt="Parque de diversiones de Night City">
-                </section>
-            </li>
-
-        </ol>
+                </div>
+            </div>
+        </section>
 
 
     </main>
